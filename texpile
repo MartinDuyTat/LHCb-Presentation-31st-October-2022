@@ -1,0 +1,7 @@
+#!/bin/bash
+f=LHCbPresentation8.tex
+if pdflatex $f
+then
+  pdflatex $f
+fi
+rm *.aux *.log *.nav *.out *.snm *.toc
